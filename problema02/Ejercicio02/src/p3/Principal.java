@@ -31,6 +31,9 @@ public class Principal {
         MatriculaMaternal mmaternal = new MatriculaMaternal();
         MatriculaMaternal mmaternal2 = new MatriculaMaternal();
         
+        TipoMatricula matri = new TipoMatricula();
+        matr
+        
         tipos.establecerMatriculaCampamento(mcamp);
         tipos.establecerMatriculaColegio(mcolegio);
         tipos.establecerPromedioTarifas();
