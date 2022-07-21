@@ -43,4 +43,16 @@ public class TipoMatricula {
     public double obtenerPromedioTarifas() {
         return promedioMatriculas;
     }
+
+    @Override
+    public String toString() {
+        String cadena = String.format("Reporte\n");
+        for (int i = 0; i < lisMatriculas.size(); i++) {
+           cadena = String.format("%s%s\n", cadena,
+                    lisMatriculas.get(i));
+        }
+          cadena = String.format("%sPromedio Tarifas: %.2f\n", cadena,
+                    promedioMatriculas);
+        return cadena;
+    }
 }
